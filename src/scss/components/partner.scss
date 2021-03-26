@@ -1,0 +1,37 @@
+.partner{
+    background: &bgWhite;
+    padding: 130px 0; 
+    .container{
+        max-width: 1000px;
+    } 
+    &__content{
+        padding-left: 80px;
+    } 
+    &__row{
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    &__title{
+        width: 80%;
+        margin-bottom: 18px;
+        @include title;
+    }
+    &__title--center{
+        margin-bottom: 18px;
+        text-align: center;
+        margin: 115px 0 66px;
+        @include title
+    }
+    &__items{
+        display: flex;
+        justify-content: space-around;
+        &__item{
+            
+        }
+    }
+    &__description{
+        line-height: 27px;
+        width: 80%;
+        @include description;
+    }
+}

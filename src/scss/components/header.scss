@@ -1,0 +1,33 @@
+.header{
+    background-color: $colorGreen;
+    padding: 20px 0;
+    &__row{
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__menu{
+        display: flex;
+        align-items: center;
+    }
+    &__item{
+        margin-left: 25px;
+        font-size: 16px;
+        font-family: 'Noto Sans', sans-serif;
+        color: $colorWhite;
+        cursor: pointer;
+        &:last-child{
+            background-color:$bgButton;
+            padding: 15px 25px;
+            border-radius: 160px;
+            transition: 0.3s;
+            &:hover{
+                background-color: rgba($bgButton, $alpha: .7);
+                transform: scale(1.1);
+            }
+        }
+        &:first-child{
+            margin-left: 0;
+        }
+    }
+
+}

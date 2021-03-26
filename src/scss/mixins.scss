@@ -1,0 +1,26 @@
+@mixin title {
+    color: $colorGreen;
+    font-size: 48px;
+    font-weight: 600;
+    font-family: $font-jose;
+}
+@mixin description {
+    color: $colorGreen;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: $font-noto;
+}
+
+@mixin font ($color, $size, $weight, $family) {
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+    font-family: $family;
+}
+@mixin button ($bgButton:$bgButton){
+    background-color:$bgButton;
+    padding: 15px 25px;
+    border-radius: 160px;
+    transition: 0.3s;
+    border-radius: 160px;
+}
